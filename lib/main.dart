@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:location/location.dart';
+import './util/button_track.dart';
 
 void main() {
   runApp(new MyApp());
@@ -90,6 +91,7 @@ class _MyAppState extends State<MyApp> {
             ? 'Has permission : Yes' 
             : "Has permission : No"),
                 ),
+                ButtonTrack(),
                 ],
               ),
             ));
